@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Message from './components/message/Message';
-import Homepage from './components/homepage/Homepage';
+import Message from './components/Message'
+import Homepage from './components/Homepage';
+
 
 class App extends Component {
   render() {
@@ -10,7 +11,7 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route exact path='/' component={Homepage} />
-            <Route path='/message/:id' component={Message} />
+            <Route path='/messages/:messageId' component={Message} />
           </Switch>
         </BrowserRouter>
       </div>
