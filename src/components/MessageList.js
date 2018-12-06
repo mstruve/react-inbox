@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import { connect } from 'react-redux';
-import { fetchMessageInfo } from '../actions/actions'
-
-
+import axios from 'axios';
 
 class MessageList extends Component {
     constructor(props) {

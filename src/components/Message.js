@@ -24,7 +24,6 @@ class Message extends Component {
             console.log('hello')
             return (<div><p>Loading Message</p></div>)}
         else {
-            console.log(message.id)
             return (
             <div className ='row'>
                 <div>
